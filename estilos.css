@@ -25,6 +25,10 @@ a {
     align-items:center;
 }
 
+.menu .menu-icon {
+    display:none;
+}
+
 header .logo {
     font-size: 23px;
     font-weight: bold;
@@ -145,7 +149,7 @@ hr {
 
 #menu .linea1 div, #menu .linea2 div {
     display:inline-block;
-    width: 33.1%;
+    width: 32.1%;
 }
 
 #menu .linea1, #menu .linea2 {
@@ -301,4 +305,203 @@ hr {
 
 #contacto .contenedor ul li:first-child(1){
     font-weight: bold;
+}
+
+#contacto a {
+    color: #fff;
+    padding: 9px;
+    background: #c39d63;
+    letter-spacing: 2px;
+    display: inline-block;
+    margin-top: 20px;
+}
+
+#contacto h3 {
+    font-size: 23px;
+    font-weight: 100;
+    margin: 0;
+}
+
+#contacto .derecha p {
+    opacity: 0.4;
+    width: 70%;
+    margin: auto;
+}
+
+#contacto .derecha a{
+    padding: 9px 12px;
+}
+
+#contacto .derecha h3 {
+    margin-top: 45px;
+}
+
+#contacto form{
+    margin-top: 25px;
+}
+
+input[type="text"] {
+    width: 72%;
+    border: 0;
+    background: #111111;
+    padding: 15px;
+    font-size: 16px;
+    margin-bottom: 10px;
+}
+
+::placeholder{
+    color: #cdcdcd
+}
+
+::-ms-input-placeholder {
+    color: #cdcdcd;
+}
+
+input[type="submit"]{
+    display: block;
+    width: 76%;
+    margin: auto;
+    margin-top: 20px;
+    border: 0;
+    background:  #c39d63;
+    color: #ffffff;
+    padding: 11px 0;
+    font-size: 16px;
+}
+
+#contacto .derecha, #contacto .izquierda {
+    width: 35%;
+}
+
+@media screen and (max-width:800px){
+    nav {
+        position: absolute;
+        top: 80px;
+        left: 0;
+        background: #000;
+        width: 100%;
+        display:none;
+    }
+
+    nav ul li {
+        display:block;
+        margin-bottom: 15px;
+    }
+
+    nav ul li a {
+        color: #fff;
+    }
+
+    header .logo {
+        font-size:20px;
+    }
+
+    .menu .menu-icon {
+        display:block;
+    }
+    #intro {
+        margin-top: -20px;
+    }
+
+    #intro h1 {
+        font-size: 36px;
+
+    }
+
+    #intro p {
+        font-size: 16px;
+        line-height: 30px;
+        width: 100%;
+    }
+
+    #history .contenedor {
+        flex-direction: column;
+    }
+
+    #history .izquierda {
+        width: 100%;
+    }
+
+    #history .derecha img {
+        width: 100%;
+    }
+
+    #menu {
+        height: 1980px;
+        padding-top: 20px;
+    }
+
+    #menu .linea1 div, #menu .linea2 div {
+        display: block;
+        width: 100%;
+    }
+
+    #menu .texto {
+        top: 0px;
+    }
+
+    #menu #texto-2 {
+        top: 18px;
+    }
+
+    #menu .parrafo {
+        width: 80%;
+        margin: auto;
+    }
+
+    #menu ul {
+        padding: 50px;
+    }
+
+    #menu .linea1, #menu .linea2 {
+        padding-top: 20px;
+     
+    }
+
+    .linea2 .hongo{
+        width:100% !important;
+    }
+
+    #menu .hongo {
+        top: -20px;
+        left: 0;
+    }
+
+    #menu #ultimo {
+        width: 100% !important;
+        top: 18px;
+    }
+
+    .linea2 .pez{
+        width:100% !important;
+        top: -10px !important;
+        right: 0 !important;
+    }
+
+    #menu .linea2 {
+        height: 634px;
+    }
+
+    .contenedor-testimonials{
+        flex-direction: column;
+    }
+
+    .testimonial {
+        width: 100%;
+        
+    }
+
+    #contacto .contenedor {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    #contacto .izquierda, #contacto .derecha {
+        width: 85%;
+    }
+
+    .derecha {
+        margin-top: 60px;
+    }
 }
